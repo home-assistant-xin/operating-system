@@ -51,7 +51,7 @@ def test_os_update(shell, shell_json, target):
     shell.run_check("ha su reload --no-progress")
 
     # update OS to latest stable - in tests it should never be the same version
-    stable_version = shell_json("curl -sSL https://version.home-assistant.io/stable.json")["hassos"]["ova"]
+    stable_version = shell_json("curl -sSL https://version.home-assistant.xin/stable.json")["hassos"]["ova"]
 
     # Since Supervisor 2026.07 (home-assistant/supervisor#6982) an OS update no
     # longer reboots automatically: it installs the bundle to the other slot,
